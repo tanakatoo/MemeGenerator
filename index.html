@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="meme.css">
+</head>
+<body>
+    <section class="input-section">
+        <div class="header">
+            <h1 class="header__primary">
+                <span class="header__primary-main">Meme Generator</span>
+                <span class="header__primary-sub">Make your original meme!</span>
+            </h1>
+        </div>
+        <div class="error">
+            <span class="error__message"></span>
+        </div>
+        <div class="form-div">
+            <form id="input-form">
+                <div class="input__block">
+                    <label class="input__block-label" for="url">Image URL</label>
+                    <input class="input__block-text" type="url" id="url"/>
+                </div>
+                <div class="input__block">
+                    <label class="input__block-label" for="top-text">Top text</label>
+                    <input class="input__block-text" type="text" id="top-text"/>
+                </div>
+                <div class="input__block">
+                    <label class="input__block-label" for="bottom-text">Bottom text</label>
+                    <input class="input__block-text" type="text" id="bottom-text"/>
+                </div>
+                <div class="btn-div">
+                    <button type="submit" class="btn">Generate!</button>
+                </div>
+            </form>
+        </div>
+    </section>
+  
+    <section class="output-container">
+        <div class="output-container__output ">
+            <div class="output-container__outputOverlay removable">
+                <span class="output-container__outputOverlay__text removable">X</span>
+            </div>
+            <img class="meme-img" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg">
+            <span class="output-container__output__text output-container__output__text-top">1234</span>
+            <span class="output-container__output__text output-container__output__text-bottom">431</span>
+        </div>
+    </section>
+    <script src="meme.js"></script>
+</body>
+</html>
